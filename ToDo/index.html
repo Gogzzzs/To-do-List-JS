@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container">
+        <h1>ToDo</h1>
+
+        <section class="todo-section">
+            <h2>To do list</h2>
+
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Insert a task" required>
+                <button type="submit">Add</button>
+            </form>
+            <div class="list-bttns">
+                <button type="button" id="allDone">All done</button>
+                <button type="button" id="allNot">All not done</button>
+                <button type="button" id="clearAll">Clear All</button>
+            </div>
+            <ul id="todo-list"></ul>
+        </section>
+
+        <hr>
+
+        <section class="report-section">
+            <h2>Report Area</h2>
+            <button id="generate-report">Generate Report</button>
+            <textarea id="report-output" rows="6" readonly></textarea>
+            <button id="copy-report">Copy report</button>
+        </section>
+        
+    </main>
+
+    <footer>© Gabriel Gonçalves Ramos. Todos os direitos reservados.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

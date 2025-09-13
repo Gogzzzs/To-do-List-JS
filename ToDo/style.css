@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+}
+body{
+    background: linear-gradient(180deg, #fffcfc, #b6b4b4, #fffcfc);
+    color: #222;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#todo-form{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+#todo-form input{
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 2px 1px 5px #333;
+}
+#todo-form button{
+    padding: 10px 30px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #003450;
+}
+#todo-form button:hover{
+    background-color: #023e8a;
+}
+
+.list-bttns{
+    display: flex;
+    justify-content: center;
+}
+
+#allDone{
+    background-color: #77ff8e;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#allDone:hover{
+    background-color: #6bdf7f;
+}
+#allNot{
+    background-color: #ff6868;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+#allNot:hover{
+    background-color: #ff3d3d;
+}
+#clearAll{
+    background-color: #b4b4b4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+#clearAll:hover{
+    background-color: #7b7b7b;
+}
+
+#todo-list{
+    list-style: none;
+    margin-top: 1rem;
+}
+#todo-list li {
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liDone{
+    background-color: #77ff8e;
+}
+.liOngoing{
+    background-color: #ff6d6d;
+}
+.done{
+    text-decoration: line-through;
+    color: #777;
+}
+
+button{
+    font-weight: bold;
+    transition: 0.3s ease;
+    text-shadow: 1px 1px 5px #ccc;
+}
+
+.report-section{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#generate-report, #copy-report{
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00b4d8;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #0085a0;
+}
+
+#generate-report:hover, #copy-report:hover{
+    background-color: #0077b6;
+}
+
+#report-output{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    resize: none;
+    font-family: monospace;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+footer{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width:472px) {
+    .container{
+        width:344px;
+    }
+    #todo-form{
+        flex-wrap: wrap;
+    }
+
+    #todo-form input{
+        text-align: center;
+    }
+
+    #todo-form button{
+        margin: 0 auto;
+    }
+
+}
